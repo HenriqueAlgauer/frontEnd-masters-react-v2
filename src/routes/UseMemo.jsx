@@ -6,6 +6,8 @@ export default function Home() {
   const [left, setLeft] = useState(0);
   const value = useMemo(() => expensiveMathOperation(count), [count]);
 
+  //const value = expensiveMathOperation(count)
+
   useEffect(() => {
     requestAnimationFrame(animate);
     function animate() {

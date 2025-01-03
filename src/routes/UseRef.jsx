@@ -1,16 +1,8 @@
 import { memo, useEffect, useRef } from 'react';
 import * as THREE from 'three';
 
-const otherObj = {}
-
 const UseRefMemo = memo(function UseRef() {
   const renderTarget = useRef();
-  const otherRef = useRef()
-
-  const insideObj = {}
-  
-  otherRef.current = otherObj
-
 
   useEffect(() => {
     let continueRendering = true;
